@@ -39,6 +39,9 @@ public static class Program
         // Lambda expression with multiple parameters
         Func<int, int, int> multipleParametersLambda = (x, y) => x + y;
         Console.WriteLine($"Sum of 3 and 4: {multipleParametersLambda(3, 4)}");
+
+        string? s = "Ashfaq";
+        Console.WriteLine(s!.Length); // Using null-conditional operator
     }
 
     // Action and Func are built-in generic delegate types in C#
